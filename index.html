@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumeroCalculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    .container {
+      padding: 20px;
+      margin: auto;
+    }
+    h1 {
+      color: #333;
+    }
+    .input-field {
+      margin: 10px 0;
+    }
+    input {
+      padding: 10px;
+      width: 60%;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <img src="/logo.png" alt="logo" width="210" height="150">
+  <div class="container">
+    <h1>NumeroCalculator</h1>
+    <h5>
+      NumeroCalculator ✨ is a simple tool based on Pythagorean numerology 🔢, helping you decode the meaning of names and numbers 🌀 to reveal insights about your personality 🌟 and life path 🚀
+    </h5>
+    <div class="input-field">
+      <label for="name">Enter Your Full Name:</label><br>
+      <input type="text" id="name" placeholder="Full Name">
+    </div>
+    <div class="input-field">
+      <label for="birthdate">Enter Your Birthdate:</label><br>
+      <input type="date" id="birthdate">
+    </div>
+    <button id="calculateButton">Click here to see Results </button>
+    <div id="result"></div>
+  </div>
+  <text>Design & Development By MD Ansari</text>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
